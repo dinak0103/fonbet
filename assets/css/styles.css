@@ -1,0 +1,108 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Unbounded:wght@400;500;600&display=swap');
+
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  background-color: #17263d;
+  color: white;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 1024px;
+  margin-inline: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 3rem;
+}
+
+.section {
+  padding-block: 5rem 1rem;
+  padding: 10rem 0;
+}
+
+
+.center {
+  text-align: center;
+}
+
+/*=============== HEADER & NAV ===============*/
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  transition: box-shadow .3s, background .4s;
+}
+
+.nav {
+  position: relative;
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+/*=============== BUTTON ===============*/
+.button {
+  display: inline-flex;
+  align-items: center;
+  column-gap: .5rem;
+  background-color: #d42a28;
+  padding: 1rem 1.5rem;
+  font-weight: 600;
+  transition: background .3s;
+}
+
+
+
+@media screen and (max-width: 340px) {
+  .container {
+    margin-inline: 1rem;
+  }
+
+
+}
+
+
+
+@media screen and (min-width: 1064px) {
+  .container {
+    margin-inline: auto;
+  }
+
+}
